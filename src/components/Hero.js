@@ -7,7 +7,9 @@ export default function Hero() {
       <section className="hero">
         <div className="overlay">
           <article>
-            <h1>Solve trigonometry problems on the fly</h1>
+            <h1 className="font-bold">
+              Solve trigonometry problems on the fly
+            </h1>
             <Button />
           </article>
 
