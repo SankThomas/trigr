@@ -8,6 +8,7 @@ export default function ContactUs() {
           <article>
             <h1 className="text-4xl mb-5 mt-10 font-bold">Let's talk some</h1>
             <form method="post" className="flex flex-col">
+              <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="name">What is your name</label>
               <input
                 type="text"
