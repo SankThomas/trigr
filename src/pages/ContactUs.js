@@ -7,7 +7,7 @@ export default function ContactUs() {
         <div className="flex flex-col-reverse md:grid grid-cols-2 gap-10">
           <article>
             <h1 className="text-4xl mb-5 mt-10 font-bold">Let's talk some</h1>
-            <form className="flex flex-col">
+            <form method="post" className="flex flex-col">
               <label htmlFor="name">What is your name</label>
               <input
                 type="text"
