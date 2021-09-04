@@ -41,6 +41,16 @@ body {
   letter-spacing: 1px;
 }
 
+.activeBtn {
+  background-color: transparent;
+  border: none;
+  color: #10b981;
+}
+
+p {
+  line-height: 1.8;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -57,7 +67,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: hsl(0, 0%, 40%, 40%);
   padding: 50px 20px;
   margin-top: 50px;
   border-radius: 10px;
