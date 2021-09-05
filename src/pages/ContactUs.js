@@ -1,5 +1,7 @@
 import contact from "../contact.svg"
 
+// https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/
+
 export default function ContactUs() {
   return (
     <>
