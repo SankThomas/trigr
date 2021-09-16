@@ -1,10 +1,10 @@
-// import { useContext } from "react"
+import { useContext } from "react"
 import { NavLink } from "react-router-dom"
 import Button from "./Button"
-// import AuthContext from "../context/auth"
+import AuthContext from "../context/auth"
 
 export default function Header() {
-  // const { user, login, logout } = useContext(AuthContext)
+  const { user } = useContext(AuthContext)
 
   return (
     <>
@@ -29,6 +29,13 @@ export default function Header() {
                 Let's talk
               </NavLink>
             </li>
+            {user && (
+              <li>
+                <NavLink to="/dashboard" activeClassName="text-green-500">
+                  Dashboard
+                </NavLink>
+              </li>
+            )}
           </ul>
         </nav>
 
