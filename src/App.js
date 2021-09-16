@@ -1,12 +1,17 @@
+import { useContext } from "react"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
-import GetStarted from "./pages/GetStarted"
+// import GetStarted from "./pages/GetStarted"
 import ContactUs from "./pages/ContactUs"
 import AboutUs from "./pages/AboutUs"
 import Error from "./pages/Error"
+import Number from "./pages/Number"
+import AuthContext from "./context/auth"
 
 function App() {
+  const { user } = useContext(AuthContext)
+
   return (
     <BrowserRouter>
       {/* <main className="wrapper">
@@ -26,9 +31,14 @@ function App() {
           <Route path="/about-us">
             <AboutUs />
           </Route>
-          <Route path="/get-started">
+          {user && (
+            <Route path="/dashboard">
+              <Number />
+            </Route>
+          )}
+          {/* <Route path="/get-started">
             <GetStarted />
-          </Route>
+          </Route> */}
           <Route path="*">
             <Error />
           </Route>
