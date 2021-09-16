@@ -1,10 +1,10 @@
-import { useContext } from "react"
+// import { useContext } from "react"
 import { NavLink } from "react-router-dom"
 import Button from "./Button"
-import AuthContext from "../context/auth"
+// import AuthContext from "../context/auth"
 
 export default function Header() {
-  const { user, login, logout } = useContext(AuthContext)
+  // const { user, login, logout } = useContext(AuthContext)
 
   return (
     <>
